@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+* {
+  margin: 0;
+}
+#wrapper {
+  font-family: "Mukta";
+  color: white;
+  background-color: #0e9aa7;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.75em;
+  .button-custom {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #0e9aa7;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    &:hover {
+      background-color: white;
+      color: #0e9aa7;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    margin-top: 3vh;
+  }
+  .length-container {
+    display: flex;
+    .time-buttons {
+      padding: 0vw 4vw;
+      .buttons {
+        display: flex;
+        justify-content: center;
+        font-size: 1.25em;
+        padding: 10px;
+        p {
+          margin: -10px 15px;
+        }
+      }
+    }
+  }
+  .sessionBreak {
+    p {
+      font-size: 5.75rem;
+      border: solid white 2px;
+      border-radius: 30px;
+      max-width: 300px;
+      margin: 1vh auto;
+      font-family: digital, sans-serif;
+      padding: 10px 20px;
+      background-color: #1e555c;
+    }
+    button {
+      width: 100px;
+      margin: 2vh 3vw;
+    }
+  }
+}
+@media (max-width: 500px) {
+  * {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  #time-left {
+    width: 200px;
+    height: 90px;
+  }
+}
